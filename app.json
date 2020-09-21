@@ -1,6 +1,6 @@
 {
-    "name": "Discord.py テンプレ装備",
-    "description": "Discord.pyでbot作るテンプレ",
+    "name": "Discord読みあげbot",
+    "description": "discordの読みあげbot",
     "repository": "https://github.com/sh1ma/discord-bot-template",
     "keywords": [
         "discord",
