@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-INITIAL_COGS = ["cogs.ready", "cogs.hello"]
+INITIAL_COGS = ["cogs.ready", "cogs.yomiage"]
 
 
 class Robot(commands.Bot):
@@ -14,5 +14,5 @@ class Robot(commands.Bot):
 if __name__ == "__main__":
     import os
 
-    bot = Robot()
+    bot = Robot(os.environ["COMMAND_PREFIX"])
     bot.run(os.environ["DISCORD_TOKEN"])
