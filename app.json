@@ -1,7 +1,7 @@
 {
-    "name": "Discord.py テンプレ装備",
-    "description": "Discord.pyでbot作るテンプレ",
-    "repository": "https://github.com/sh1ma/discord-bot-template",
+    "name": "Discord読みあげbot",
+    "description": "discordの読みあげbot",
+    "repository": "https://github.com/sh1ma/yomiage-bot",
     "keywords": [
         "discord",
         "bot",
@@ -10,6 +10,19 @@
     "env": {
         "DISCORD_TOKEN": {
             "description": "Discord botのtokenをここに貼る"
+        },
+        "COMMAND_PREFIX": {
+            "description": "コマンドの接頭辞を設定する(例: `!join`なら!)"
+        },
+        "VOICE_TEXT_API_TOKEN": {
+            "description": "VoiceTextのAPIトークン"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "https://github.com/Crazycatz00/heroku-buildpack-libopus.git"
         }
     }
-}
